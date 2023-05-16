@@ -183,8 +183,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   margin: 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .heder-link::after {
   content: "";
@@ -257,7 +256,6 @@ ul {
   margin-bottom: 10px;
 }
 
-
 .nero-title {
   margin: auto;
   max-width: 496px;
@@ -292,7 +290,7 @@ ul {
   padding: 0 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -301,8 +299,7 @@ ul {
   background-color: var(--ocean);
 }
 
-.botton-padding {
-}
+
 /**
   |============================
   | feature
@@ -489,7 +486,8 @@ ul {
 
   color: var(--light-slate);
   fill: var(--light-slate);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-socials-link:hover .customers-socials-icon {
   fill: var(--ocean);
@@ -535,9 +533,6 @@ ul {
   background-color: var(--navy-blue);
   color: var(--cloud);
   padding: 100px 0;
-}
-.footer-cont-logo {
-  margin-right: 120px;
 }
 
 .footer-logo {
@@ -627,6 +622,118 @@ ul {
 .tfooter-socials-link:hover {
   background-color: var(--grеen);
 }
+
+/**
+  |============================
+  | footer-form
+  |============================
+*/
+.footer-form {
+  display: block;
+  padding-left: 80px;
+}
+.footer-form-title {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.footer-form-box {
+  display: flex;
+  gap: 24px;
+
+  margin-top: 16px;
+}
+.footer-form-lable {
+  position: relative;
+
+  display: block;
+  width: 264px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2px;
+}
+.footer-form-tag {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+
+
+  
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+
+  align-items: center;
+  letter-spacing: 0.04em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-field {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--white);
+
+  padding-left: 16px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-field:focus {
+  border: 1px solid var(--iris) ;
+  outline: var(--iris);
+  
+}
+.footer-form-field:not(:placeholder-shown) + .footer-form-tag,
+.footer-form-field:focus + .footer-form-tag
+ {
+  transform: translateY(-133.5%);
+  background-color: var(--navy-blue);
+}
+.footer-form-field:focus + .footer-form-tag {
+  color: var(--iris);
+  background-color: var(--navy-blue);
+}
+.footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+
+  color: var(--white);
+  background-color: var(--iris);
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5px;
+  border: none;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--ocean);
+}
+
 
 /**
   |============================
@@ -767,8 +874,10 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-link:hover .overlay-text, .gallery-link:focus .overlay-text{transform: translateY(0%)}
-
+.gallery-link:hover .overlay-text,
+.gallery-link:focus .overlay-text {
+  transform: translateY(0%);
+}
 
 .gallery-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -812,16 +921,16 @@ ul {
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  
 }
 
 .modal {
+  padding: 24px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -835,12 +944,11 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
-  
+
   transition-delay: 0ms;
 }
 .modal-close-btn {
@@ -858,8 +966,7 @@ ul {
   border-radius: 50%;
   top: 24px;
   right: 24px;
-  bottom:var(--grey); ;
- 
+  bottom: var(--grey);
 
   width: 24px;
   height: 24px;
@@ -873,9 +980,128 @@ ul {
   color: var(--white);
 }
 
-
-
 .modal-close-icon {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/**
+  |============================
+  | modal_form
+  |============================
+*/
+.modal-title {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+
+  padding-top: 48px;
+  padding-bottom: 16px;
+}
+.modal-form-lable {
+  display: block;
+
+  padding-bottom: 4px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+
+  color: var(--light-slate);
+}
+.molal-form-field {
+  width: 100%;
+  height: 40px;
+
+  outline: transparent;
+  outline-offset: -1px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+
+  padding: 0;
+  padding-left: 38px;
+
+  transition: 250ms;
+}
+.molal-form-field:focus {
+  outline: 1px solid var(--iris);
+}
+.molal-form-field:focus + .modal-icon {
+  fill: var(--iris);
+}
+.modal-form-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+.modal-icon {
+  pointer-events: none;
+
+  fill: var(--navy-blue);
+
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  transition: 250ms;
+}
+.modal-form-comment {
+  display: block;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+
+  padding: 8px 16px;
+}
+.modal-form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 0;
+}
+.modal-checkbox {
+  appearance: none;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.44558 0.255056C8.61838 0.089653 8.84834 -0.00178848 9.08693 2.65108e-05C9.32551 0.0018415 9.55407 0.0967713 9.72436 0.264784C9.89466 0.432797 9.99337 0.660752 9.99968 0.900549C10.006 1.14034 9.91939 1.37323 9.75816 1.55005L4.86357 7.70436C4.7794 7.79551 4.67782 7.86865 4.5649 7.91942C4.45198 7.97018 4.33003 7.99754 4.20636 7.99984C4.08268 8.00214 3.95981 7.97935 3.8451 7.93282C3.73038 7.88629 3.62618 7.81698 3.53872 7.72903L0.292827 4.46564C0.202435 4.38096 0.129933 4.27884 0.0796475 4.16537C0.0293621 4.05191 0.00232279 3.92942 0.000143182 3.80522C-0.00203643 3.68102 0.0206883 3.55765 0.0669613 3.44248C0.113234 3.3273 0.182108 3.22267 0.269473 3.13483C0.356838 3.047 0.460905 2.97775 0.575465 2.93123C0.690026 2.88471 0.812734 2.86186 0.936267 2.86405C1.0598 2.86624 1.18163 2.89343 1.29449 2.94398C1.40734 2.99454 1.50892 3.06743 1.59315 3.15831L4.16189 5.73967L8.42227 0.28219C8.42994 0.272694 8.43813 0.263635 8.4468 0.255056H8.44558Z' fill='%23F4F4FD'/%3E%3C/svg%3E");
+  transform: 250ms;
+}
+.modal-checkbox:checked {
+  background-color: var(--iris);
+  border: 1px solid var(--iris);
+
+  outline-color: var(--iris);
+}
+.modal-checkbox:focus-visible {
+  border: 1px solid var(--iris);
+}
+.modal-checkbox-text {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+}
+.modal-form-comment:focus {
+  outline: 1px solid var(--iris);
+}
+.modal-checkbox-link {
+  color: var(--iris);
+}
+.btn-modal {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
