@@ -296,7 +296,7 @@
     <!--footer-->
     <footer class="footer">
       <div class="container footer-list">
-        <div class="">
+        <div class="footer-cont-logo">
           <a class="footer-logo link" href="./index.html"
             >Web<span class="footer-logo-color">Studio</span></a
           >
@@ -306,7 +306,7 @@
           </p>
         </div>
         <div class="tfooter-social-blok">
-          <span class="tfooter-social">Social media</span>
+          <p class="tfooter-social">Social media</p>
           <ul class="tfooter-socials list">
             <li class="tfooter-socials-item">
               <a
@@ -316,7 +316,7 @@
                 rel="noopener noreferrer"
                 aria-label="instagram icon"
               >
-                <svg class="tfooter-socials-icon" width="16" height="16">
+                <svg class="tfooter-socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -329,7 +329,7 @@
                 rel="noopener noreferrer"
                 aria-label="icon twitter"
               >
-                <svg class="tfooter-socials-icon" width="16" height="16">
+                <svg class="tfooter-socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -342,7 +342,7 @@
                 rel="noopener noreferrer"
                 aria-label="icon facebook"
               >
-                <svg class="tfooter-socials-icon" width="16" height="16">
+                <svg class="tfooter-socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -355,13 +355,34 @@
                 rel="noopener noreferrer"
                 aria-label="icon linkedin"
               >
-                <svg class="tfooter-socials-icon" width="16" height="16">
+                <svg class="tfooter-socials-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <form class="footer-form" name="footer_form">
+          <strong class="footer-form-title">Subscribe</strong>
+
+          <div class="footer-form-box">
+            <label class="footer-form-lable">
+              <input
+                class="footer-form-field"
+                type="email"
+                name="user_e-mail"
+                required
+                placeholder=" "
+              />
+              <span class="footer-form-tag">E-mail</span>
+            </label>
+            <button class="footer-btn" type="submit">
+              Subscribe<svg class="footer-btn-svg" width="24" height="20">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
